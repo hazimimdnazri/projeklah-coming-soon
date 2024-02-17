@@ -7,4 +7,5 @@ app.listen(process.env.PORT, () => {
     console.log(`The app is running at port: ${process.env.PORT}`)
 })
 
+app.use(express.static('src'))
 app.use('/', routes)
